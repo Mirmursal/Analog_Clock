@@ -1,0 +1,37 @@
+html , body , .container{
+    height: 100%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    width:372px;
+    height:400px;
+    background-image: url('images/clock.png');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.clock:after{
+    content:'';
+    width:30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hands{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.wrapDigital{
+    margin-left: 3%;
+    font-size: 34px;
+    color: cadetblue;
+}
